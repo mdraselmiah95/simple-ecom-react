@@ -14,7 +14,7 @@ const Shop = () => {
   return (
     <>
       <div className="search-container">
-        <input type="text" id="" />
+        <input type="text" id="" placeholder="search product" />
       </div>
       <div className="main-container">
         <div className="shop-container">

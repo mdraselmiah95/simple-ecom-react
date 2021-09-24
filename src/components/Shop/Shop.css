@@ -6,6 +6,7 @@
 .search-container input {
   width: 75%;
   border-radius: 5px;
+  padding: 5px 0;
 }
 .main-container {
   display: grid;

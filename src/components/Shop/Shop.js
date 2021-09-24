@@ -17,7 +17,7 @@ const Shop = () => {
     const matchedProducts = products.filter((product) =>
       product.name.includes(searchText)
     );
-    console.log(matchedProducts);
+    console.log(matchedProducts.length);
   };
 
   return (

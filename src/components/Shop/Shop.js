@@ -11,10 +11,24 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+
+  const handleSearch = (event) => {
+    const searchText = event.target.value;
+    const matchedProducts = products.filter((product) =>
+      product.name.includes(searchText)
+    );
+    console.log(matchedProducts);
+  };
+
   return (
     <>
       <div className="search-container">
-        <input type="text" id="" placeholder="search product" />
+        <input
+          type="text"
+          onChange={handleSearch}
+          id=""
+          placeholder="search product"
+        />
       </div>
       <div className="main-container">
         <div className="shop-container">

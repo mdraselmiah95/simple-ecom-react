@@ -25,10 +25,11 @@ const Product = (props) => {
         <br />
         <Rating
           initialRating={star}
-          emptySymbol="far fa-star"
-          fullSymbol="fas fa-star"
+          emptySymbol="far fa-star icon-color "
+          fullSymbol="fas fa-star icon-color "
           readonly
         />
+        <br />
         <br />
         <button>{fontIcon} ADD TO CART</button>
       </div>

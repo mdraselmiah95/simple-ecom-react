@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Header-container {
+  text-align: center;
+}
+.logo {
+  width: 20%;
+}
+nav {
+  background-color: black;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 20px;
+}
+nav ul li:hover {
+  background-color: aliceblue;
+}
+nav ul li a:hover {
+  color: black;
+}

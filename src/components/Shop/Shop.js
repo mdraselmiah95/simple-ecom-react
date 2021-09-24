@@ -12,14 +12,19 @@ const Shop = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div className="main-container">
-      <div className="shop-container">
-        {products.map((product) => (
-          <Product key={product.key} product={product} />
-        ))}
+    <>
+      <div className="search-container">
+        <input type="text" id="" />
       </div>
-      <order className="container">Order</order>
-    </div>
+      <div className="main-container">
+        <div className="shop-container">
+          {products.map((product) => (
+            <Product key={product.key} product={product} />
+          ))}
+        </div>
+        <order className="container">Order</order>
+      </div>
+    </>
   );
 };
 

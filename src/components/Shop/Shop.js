@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
 import "./Shop.css";
+
 const Shop = () => {
   const [products, setProducts] = useState([]);
+  const [displayProducts, setDisplayProducts] = useState([]);
 
   useEffect(() => {
     fetch(
       "https://raw.githubusercontent.com/ProgrammingHero1/ema-john-simple-resources/master/fakeData/products.JSON"
     )
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => {
+        setProducts(data);
+        setDisplayProducts(data);
+      });
   }, []);
 
   const handleSearch = (event) => {
@@ -17,7 +22,8 @@ const Shop = () => {
     const matchedProducts = products.filter((product) =>
       product.name.toLowerCase().includes(searchText.toLowerCase())
     );
-    console.log(matchedProducts.length);
+    setDisplayProducts(matchedProducts);
+    // console.log(matchedProducts.length);
   };
 
   return (
@@ -32,7 +38,7 @@ const Shop = () => {
       </div>
       <div className="main-container">
         <div className="shop-container">
-          {products.map((product) => (
+          {displayProducts.map((product) => (
             <Product key={product.key} product={product} />
           ))}
         </div>

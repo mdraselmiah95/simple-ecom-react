@@ -23,7 +23,12 @@ const Product = (props) => {
           <small>only {stock} left in stock - order soon</small>
         </p>
         <br />
-        <Rating emptySymbol="far fa-star" fullSymbol="fas fa-star" readonly />
+        <Rating
+          initialRating={star}
+          emptySymbol="far fa-star"
+          fullSymbol="fas fa-star"
+          readonly
+        />
         <br />
         <button>{fontIcon} ADD TO CART</button>
       </div>

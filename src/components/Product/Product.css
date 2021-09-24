@@ -1,0 +1,12 @@
+.product-container {
+  display: flex;
+}
+.product-img {
+  padding: 5px 15px;
+}
+.product-img img {
+  margin: 0 10px;
+}
+.product-details h5 {
+  color: darkmagenta;
+}

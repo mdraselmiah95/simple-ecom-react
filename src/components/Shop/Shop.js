@@ -14,7 +14,6 @@ const Shop = () => {
   return (
     <div className="main-container">
       <div className="shop-container">
-        shop:{products.length}
         {products.map((product) => (
           <Product key={product.key} product={product} />
         ))}

@@ -18,7 +18,7 @@ const Product = (props) => {
         </p>
         <br />
         <h4>${price}</h4>
-        <p>
+        <p className="stock">
           <small>only {stock} left in stock - order soon</small>
         </p>
         <button>{fontIcon} ADD TO CART</button>

@@ -1,12 +1,28 @@
 .product-container {
   display: flex;
+  align-items: center;
 }
+
 .product-img {
   padding: 5px 15px;
+  margin-left: 8%;
 }
 .product-img img {
   margin: 0 10px;
 }
+.product-details {
+  margin: 15px 5px;
+}
 .product-details h5 {
   color: darkmagenta;
+}
+.product-details .stock {
+  margin: 20px 0;
+}
+.product-details button {
+  padding: 1.5% 17%;
+  background-color: gold;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
 }
